@@ -16,12 +16,11 @@ public class ClientProxy extends CommonProxy {
 
     @Override
     public void registerRenderers() {
-        // 注册方块模型
-        for (Item item : ModBlocks.ITEMS) {
-            ModelLoader.setCustomModelResourceLocation(
-                item, 0,
-                new ModelResourceLocation(item.getRegistryName(), "inventory")
-            );
-        }
+        // ✅ 直接获取 Item，不使用 ModBlocks.ITEMS
+        Item item = Item.getItemFromBlock(ModBlocks.SOUL_LANTERN);
+        ModelLoader.setCustomModelResourceLocation(
+            item, 0,
+            new ModelResourceLocation(item.getRegistryName(), "inventory")
+        );
     }
 }
