@@ -2,7 +2,7 @@ package com.example.soullantern.init;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
-
+import com.example.soullantern.SoulLanternMod;
 import java.util.ArrayList;
 import java.util.List;
 
