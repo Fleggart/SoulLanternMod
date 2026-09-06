@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=up": { "model": "soullantern:torch" },
+        "facing=east": { "model": "soullantern:wall_torch" },
+        "facing=south": { "model": "soullantern:wall_torch", "y": 90 },
+        "facing=west": { "model": "soullantern:wall_torch", "y": 180 },
+        "facing=north": { "model": "soullantern:wall_torch", "y": 270 }
+    }
+}
