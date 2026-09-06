@@ -1,0 +1,6 @@
+{
+    "variants": {
+        "hanging=false": { "model": "soullantern:lantern" },
+        "hanging=true": { "model": "soullantern:lantern_hanging" }
+    }
+}
