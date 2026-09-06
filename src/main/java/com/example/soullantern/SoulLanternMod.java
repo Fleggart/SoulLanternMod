@@ -1,7 +1,5 @@
 package com.example.soullantern;
 
-import com.example.soullantern.init.ModBlocks;
-import com.example.soullantern.init.ModItems;
 import com.example.soullantern.proxy.CommonProxy;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -25,8 +23,7 @@ public class SoulLanternMod {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        ModBlocks.init();
-        ModItems.init();
+        // ✅ 移除 ModBlocks.init() - 不需要，因为使用了 @EventBusSubscriber
         proxy.preInit();
     }
 
